@@ -18,6 +18,6 @@ for i in range(540):
     # gán màu cho ảnh
     img2[0:50,i] = (0,255,0)
     
-cv2.imshow("nga",img2)
+cv2.imshow("img",img2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
