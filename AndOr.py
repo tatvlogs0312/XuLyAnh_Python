@@ -21,13 +21,12 @@ bitwiseOr = cv2.bitwise_or(rectangle, circle)
 
 ################################################
 
-img1 = cv2.imread("./image/a.jpg",0)
-imgR1 = cv2.resize(img1,(240,240))
-img2 = cv2.imread("./image/n.jpg",0)
-imgR2 = cv2.resize(img2,(240,240))
-imgAnd = cv2.bitwise_and(imgR1,imgR2)
+img1 = cv2.imread("./image/n.jpg",0)
+imgR1 = cv2.rectangle(img1,(100,100),(200,200),255,-1)
+# imgR2 = cv2.rectangle(img1,(100,100),(200,200),255,-1)
+imgAnd = cv2.bitwise_and(imgR1,img1)
 cv2.imshow("AND",imgAnd)
 
-imgOr = cv2.bitwise_or(imgR1,imgR2)
+imgOr = cv2.bitwise_or(imgR1,img1)
 cv2.imshow("OR",imgOr)
 cv2.waitKey(0)
