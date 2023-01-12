@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("image\\a.jpg")
+img = cv2.imread("image\\n.jpg")
 
 witdh = img.shape[0]
 height = img.shape[1]
@@ -14,4 +14,4 @@ for x in range(witdh):
         else:
             img[x,y] = (255,255,255)
             
-cv2.imwrite('image\\a2.jpg', img)
+cv2.imwrite('image\\n2.jpg', img)
