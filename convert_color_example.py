@@ -14,4 +14,5 @@ for x in range(witdh):
         else:
             img[x,y] = (255,255,255)
             
+# imwrite() => lưu ảnh
 cv2.imwrite('image\\n2.jpg', img)
