@@ -1,0 +1,1 @@
+contours, hierarchy = cv2.findContours(ims1, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
