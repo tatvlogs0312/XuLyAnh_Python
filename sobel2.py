@@ -11,5 +11,5 @@ cv2.imshow("img_sobelx",img_x)
 cv2.imshow("img_sobely",img_y)
 cv2.imshow("img_sobel",img_xy)
 
-cv2.waitKey(0)
+cv2.waitKey(0)  
 cv2.destroyAllWindows()
